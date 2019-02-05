@@ -29,14 +29,19 @@ header{
     flex-direction: column;
 
 }
+
 footer{
+    width: 100%;
     background-color: white;
     box-shadow: 0px 0px 30px grey;
-    padding: 10px 10px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 header nav{
     font-size: 20px;

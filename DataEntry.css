@@ -29,14 +29,19 @@ header{
     flex-direction: column;
 
 }
+
 footer{
+    width: 100%;
     background-color: white;
     box-shadow: 0px 0px 30px grey;
-    padding: 10px 10px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 header nav{
     font-size: 20px;
@@ -68,13 +73,7 @@ form{
     /*align-items: center;*/
     justify-content: space-evenly;
 }
-.field{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 15px 0;
 
-}
 input{
     border: 0px;
     max-width:80%;
@@ -105,20 +104,28 @@ a{
     padding:10px;
 }
 h3{
-    margin: 10px;
-    display: inline-block;
+    margin: 10px 30px;
 }
 
 .entry{
-    display: inline-block;
+/*    display: inline-block;*/
     display: flex;
     flex-direction: row;
-}
-input[type="checkbox"]{
-    width: 20px; /*Desired width*/
-    height: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
 }
 
-
+select{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #e8e8e8;
+    text-align: center;
+    border-radius: 15px ;
+}
 
 

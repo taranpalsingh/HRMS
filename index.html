@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel =stylesheet type = "text/css" href = "index.css" media="screen">
     <title>Sign UP</title>
+    <script src = "index.js"> </script>
 </head>
 <body>
     <header>
         <img src="cybergroup-logo.png">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="login.html" >Home</a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Contact</a></li>
 
             </ul>
         </nav>
@@ -21,23 +23,23 @@
         <div id ="pop">
             <div id ="hgroup">
                 <!--<div id="sign">SIGN UP</div>-->
-                <input type="button" id = "sign" value = "SIGN UP" />
+                <input type="button" id = "sign" value = "SIGN UP" class =  />
                 <input type="button" id = "log" value = "LOG IN" onclick="window.location.href='login.html'" />
             </div>
-            <form>
+            <form name="myForm" method="post">
                 <!--<h3>Firstname: </h3>-->
-                <input type = "text" name = "firstname" placeholder = "First name" >
+                <input type = "text" name = "firstname" placeholder = "First name" id = "fname">
 
                 <!--<h3>Lastname: </h3>-->
-                <input type = "text" name = "Lastname" placeholder = "Last name">
+                <input type = "text" name = "Lastname" placeholder = "Last name" id = "lname">
 
                 <!--<h3>Email id: </h3>-->
-                <input type = "text" name = "email" placeholder = "Email ID">
+                <input type = "text" name = "email" placeholder = "Email ID" id = "email">
 
                 <!--<h3>Password: </h3>-->
-                <input type = "password" name = "password" placeholder = "Password">
+                <input type = "password" name = "password" placeholder = "Password" id = "password">
 
-                <input type="button" value=" SIGN UP " id = "button" onclick="window.location.href='login.html'" />
+                <input type="button" value=" SIGN UP " id = "button" onclick="myfunc()" />
             </form>
         </div>
     </section>
@@ -45,9 +47,9 @@
         <div id="copyright"> T. P. Productions </div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="login.html" >Home</a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Contact</a></li>
 
             </ul>
         </nav>

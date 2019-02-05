@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel =stylesheet type = "text/css" href = "DataEntry.css" media="screen">
     <title>Data Entry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+    <script src = "DataEntry.js"></script>
 </head>
 <body>
 <header>
@@ -21,47 +24,35 @@
 <div id ="pop">
 
     <h1> Details </h1>
-    <form>
+    <form name="myForm" method="post">
 
         <div class = "entry">
             <h3> Name: </h3>
-            <input type = "text" name = "Name" placeholder = "Name" >
+            <input type = "text" name = "Name" placeholder = "Name" id = "name" required>
         </div>
 
-
-        <div class = "entry">
-            <div class = "field">
-
-            <h3 > Sex: </h3>
-
-            <input type = "checkbox" name = "Male" > Male
-            <input type = "checkbox" name = "Female" > Female
-
-        </div>
-        </div>
-        <div class = "entry">
-
-            <h3> Date of Birth: </h3>
-            <input type = "date" name = "Date" >
-        </div>
+<!--
         <div class = "entry">
 
             <h3> Employee Code: </h3>
-            <input type = "number" name = "code" placeholder = "INT012" >
+            <input type = "number" name = "code" placeholder = "012" id = "code" required>
         </div>
+        -->
         <div class = "entry">
+
 
             <h3> Designation: </h3>
-            <input type = "text" name = "Designation" placeholder = "Intern" >
-        </div>
+            <div id="dropdown"></div>
+      
+       </div>
         <div class = "entry">
 
-            <h3> Years of experience: </h3>
-            <input type = "number" name = "experience" placeholder = "1" >
+            <h3> Mail: </h3>
+            <input type = "text" name = "mail" placeholder = "1" id = "mail" required>
         </div>
 
 
-        <input type="button" value=" SUBMIT " id = "button" onclick="window.location.href='DataList.html'" />
+        <input type="button" value=" SUBMIT " id = "button" onclick="myfunc()" />
 
     </form>
 </div>
